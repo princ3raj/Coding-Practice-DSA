@@ -75,7 +75,7 @@
 //
 //        minAndMax(found, indexofMax, indexofSmall, small,arr,size);
 //
-//        arr[indexofMax]=-1;
+//       
 //        arr[indexofSmall]=-1;
 //
 //

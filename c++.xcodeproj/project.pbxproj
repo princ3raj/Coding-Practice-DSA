@@ -14,6 +14,8 @@
 		EED28CF125736FA6001AA875 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED28CF025736FA6001AA875 /* main.cpp */; };
 		EED28D0125737273001AA875 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED28D0025737273001AA875 /* main.cpp */; };
 		EED28D122573B8A5001AA875 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED28D112573B8A5001AA875 /* main.cpp */; };
+		EED28D462573DC98001AA875 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED28D452573DC98001AA875 /* main.cpp */; };
+		EED28D5A25740265001AA875 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EED28D5925740265001AA875 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -94,6 +96,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		EED28D262573DC68001AA875 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EED28D412573DC98001AA875 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EED28D5525740265001AA875 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +140,11 @@
 		EED28D0025737273001AA875 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EED28D0F2573B8A5001AA875 /* CyclicallyRotateArray */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CyclicallyRotateArray; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED28D112573B8A5001AA875 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EED28D282573DC68001AA875 /* KadanesAlogorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KadanesAlogorithm; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED28D432573DC98001AA875 /* MaxSubArraySumFirstProblem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MaxSubArraySumFirstProblem; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED28D452573DC98001AA875 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EED28D5725740265001AA875 /* MinimizeTheMaxdifference */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MinimizeTheMaxdifference; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED28D5925740265001AA875 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +197,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EED28D252573DC68001AA875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED28D402573DC98001AA875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED28D5425740265001AA875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -176,6 +231,8 @@
 				EED28CEF25736FA6001AA875 /* MoveAllTheNegativeElements */,
 				EED28CFF25737273001AA875 /* UnionAndInteresection */,
 				EED28D102573B8A5001AA875 /* CyclicallyRotateArray */,
+				EED28D442573DC98001AA875 /* MaxSubArraySumFirstProblem */,
+				EED28D5825740265001AA875 /* MinimizeTheMaxdifference */,
 				EE7B9E18256511130038FEF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -190,6 +247,9 @@
 				EED28CEE25736FA6001AA875 /* MoveAllTheNegativeElements */,
 				EED28CFE25737273001AA875 /* UnionAndInteresection */,
 				EED28D0F2573B8A5001AA875 /* CyclicallyRotateArray */,
+				EED28D282573DC68001AA875 /* KadanesAlogorithm */,
+				EED28D432573DC98001AA875 /* MaxSubArraySumFirstProblem */,
+				EED28D5725740265001AA875 /* MinimizeTheMaxdifference */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -248,6 +308,22 @@
 				EED28D112573B8A5001AA875 /* main.cpp */,
 			);
 			path = CyclicallyRotateArray;
+			sourceTree = "<group>";
+		};
+		EED28D442573DC98001AA875 /* MaxSubArraySumFirstProblem */ = {
+			isa = PBXGroup;
+			children = (
+				EED28D452573DC98001AA875 /* main.cpp */,
+			);
+			path = MaxSubArraySumFirstProblem;
+			sourceTree = "<group>";
+		};
+		EED28D5825740265001AA875 /* MinimizeTheMaxdifference */ = {
+			isa = PBXGroup;
+			children = (
+				EED28D5925740265001AA875 /* main.cpp */,
+			);
+			path = MinimizeTheMaxdifference;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +449,57 @@
 			productReference = EED28D0F2573B8A5001AA875 /* CyclicallyRotateArray */;
 			productType = "com.apple.product-type.tool";
 		};
+		EED28D272573DC68001AA875 /* KadanesAlogorithm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED28D2E2573DC68001AA875 /* Build configuration list for PBXNativeTarget "KadanesAlogorithm" */;
+			buildPhases = (
+				EED28D242573DC68001AA875 /* Sources */,
+				EED28D252573DC68001AA875 /* Frameworks */,
+				EED28D262573DC68001AA875 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KadanesAlogorithm;
+			productName = KadanesAlogorithm;
+			productReference = EED28D282573DC68001AA875 /* KadanesAlogorithm */;
+			productType = "com.apple.product-type.tool";
+		};
+		EED28D422573DC98001AA875 /* MaxSubArraySumFirstProblem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED28D472573DC98001AA875 /* Build configuration list for PBXNativeTarget "MaxSubArraySumFirstProblem" */;
+			buildPhases = (
+				EED28D3F2573DC98001AA875 /* Sources */,
+				EED28D402573DC98001AA875 /* Frameworks */,
+				EED28D412573DC98001AA875 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaxSubArraySumFirstProblem;
+			productName = MaxSubArraySumFirstProblem;
+			productReference = EED28D432573DC98001AA875 /* MaxSubArraySumFirstProblem */;
+			productType = "com.apple.product-type.tool";
+		};
+		EED28D5625740265001AA875 /* MinimizeTheMaxdifference */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED28D5B25740265001AA875 /* Build configuration list for PBXNativeTarget "MinimizeTheMaxdifference" */;
+			buildPhases = (
+				EED28D5325740265001AA875 /* Sources */,
+				EED28D5425740265001AA875 /* Frameworks */,
+				EED28D5525740265001AA875 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MinimizeTheMaxdifference;
+			productName = MinimizeTheMaxdifference;
+			productReference = EED28D5725740265001AA875 /* MinimizeTheMaxdifference */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -402,6 +529,15 @@
 					EED28D0E2573B8A5001AA875 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					EED28D272573DC68001AA875 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					EED28D422573DC98001AA875 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					EED28D5625740265001AA875 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = EE7B9E12256511130038FEF4 /* Build configuration list for PBXProject "c++" */;
@@ -424,6 +560,9 @@
 				EED28CED25736FA6001AA875 /* MoveAllTheNegativeElements */,
 				EED28CFD25737273001AA875 /* UnionAndInteresection */,
 				EED28D0E2573B8A5001AA875 /* CyclicallyRotateArray */,
+				EED28D272573DC68001AA875 /* KadanesAlogorithm */,
+				EED28D422573DC98001AA875 /* MaxSubArraySumFirstProblem */,
+				EED28D5625740265001AA875 /* MinimizeTheMaxdifference */,
 			);
 		};
 /* End PBXProject section */
@@ -482,6 +621,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED28D122573B8A5001AA875 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED28D242573DC68001AA875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED28D3F2573DC98001AA875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED28D462573DC98001AA875 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED28D5325740265001AA875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED28D5A25740265001AA875 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -711,6 +873,54 @@
 			};
 			name = Release;
 		};
+		EED28D2C2573DC68001AA875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EED28D2D2573DC68001AA875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EED28D482573DC98001AA875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EED28D492573DC98001AA875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EED28D5C25740265001AA875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EED28D5D25740265001AA875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -782,6 +992,33 @@
 			buildConfigurations = (
 				EED28D142573B8A6001AA875 /* Debug */,
 				EED28D152573B8A6001AA875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED28D2E2573DC68001AA875 /* Build configuration list for PBXNativeTarget "KadanesAlogorithm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED28D2C2573DC68001AA875 /* Debug */,
+				EED28D2D2573DC68001AA875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED28D472573DC98001AA875 /* Build configuration list for PBXNativeTarget "MaxSubArraySumFirstProblem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED28D482573DC98001AA875 /* Debug */,
+				EED28D492573DC98001AA875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED28D5B25740265001AA875 /* Build configuration list for PBXNativeTarget "MinimizeTheMaxdifference" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED28D5C25740265001AA875 /* Debug */,
+				EED28D5D25740265001AA875 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
