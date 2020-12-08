@@ -9,11 +9,53 @@
 //bubble sort:- a more optimised solution other than using n,i am using n-1 in every pass
 //j is decrementing by 1 in each pass
 
-
-
 #include <iostream>
 
 using namespace std;
+
+
+int findMax(int arr[], int n){
+    int i, max;
+    max=INT32_MIN;
+    for (i=0;i<n;i++)
+    {
+        if(arr[i]>max)
+            max=arr[i];
+    }
+    
+    return max;
+}
+
+
+void CountSort(int arr[], int n){
+    int max=findMax(arr, n);
+    
+    int *c, i ,j;
+    c= new int[max+1];
+    
+    for(i=0;i<max+1;i++)
+    c[i]=0;
+
+    for(j=0;j<n;j++)
+    c[arr[j]]++;
+    
+    i=0;j=0;
+
+    while (j<max+1) {
+        
+        
+        if (c[j]>0) {
+            
+            arr[i++]=j;
+            c[j]--;
+            
+        }else{
+            j++;
+        }
+        
+    }
+    
+}
 
 
 void Merge(int A[],int l,int mid,int h)
@@ -292,6 +334,8 @@ int i,j,x;
 }
 
 
+
+
 int main() {
     
     
@@ -303,22 +347,12 @@ int main() {
         cin>>x;
     }
     
-    
-    
-   
-    RMergeSort(arr, 0, n-1);
-    
+    CountSort(arr, n);
+
     for(i=0;i<n;i++)
     printf("%d ",arr[i]);
     printf("\n");
     return 0;
-    
-
-  
-    
-    
-    
-    
     
 
 
