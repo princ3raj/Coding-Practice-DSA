@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EE7B9E1B256511130038FEF4 /* reverseArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE7B9E1A256511130038FEF4 /* reverseArray.cpp */; };
+		EE80DEC1257A498D0032F7E3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE80DEC0257A498D0032F7E3 /* main.cpp */; };
 		EEACA1892572665C0001F48B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEACA1882572665C0001F48B /* main.cpp */; };
 		EEACA1972572ACD80001F48B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEACA1962572ACD80001F48B /* main.cpp */; };
 		EEC0DD3225655296008D5D4C /* minAndMax.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEC0DD3125655296008D5D4C /* minAndMax.cpp */; };
@@ -34,6 +35,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		EE7B9E15256511130038FEF4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EE80DEBC257A498D0032F7E3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -128,6 +138,8 @@
 /* Begin PBXFileReference section */
 		EE7B9E17256511130038FEF4 /* c++ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "c++"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7B9E1A256511130038FEF4 /* reverseArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = reverseArray.cpp; sourceTree = "<group>"; };
+		EE80DEBE257A498D0032F7E3 /* SortingTechniques */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SortingTechniques; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE80DEC0257A498D0032F7E3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EEACA1862572665C0001F48B /* Kth min and max element */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kth min and max element"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEACA1882572665C0001F48B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EEACA1942572ACD80001F48B /* sortProgram */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sortProgram; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +161,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		EE7B9E14256511130038FEF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE80DEBB257A498D0032F7E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,6 +252,7 @@
 				EED28D102573B8A5001AA875 /* CyclicallyRotateArray */,
 				EED28D442573DC98001AA875 /* MaxSubArraySumFirstProblem */,
 				EED28D5825740265001AA875 /* MinimizeTheMaxdifference */,
+				EE80DEBF257A498D0032F7E3 /* SortingTechniques */,
 				EE7B9E18256511130038FEF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -250,6 +270,7 @@
 				EED28D282573DC68001AA875 /* KadanesAlogorithm */,
 				EED28D432573DC98001AA875 /* MaxSubArraySumFirstProblem */,
 				EED28D5725740265001AA875 /* MinimizeTheMaxdifference */,
+				EE80DEBE257A498D0032F7E3 /* SortingTechniques */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,6 +281,14 @@
 				EE7B9E1A256511130038FEF4 /* reverseArray.cpp */,
 			);
 			path = "c++";
+			sourceTree = "<group>";
+		};
+		EE80DEBF257A498D0032F7E3 /* SortingTechniques */ = {
+			isa = PBXGroup;
+			children = (
+				EE80DEC0257A498D0032F7E3 /* main.cpp */,
+			);
+			path = SortingTechniques;
 			sourceTree = "<group>";
 		};
 		EEACA1872572665C0001F48B /* Kth min and max element */ = {
@@ -345,6 +374,23 @@
 			name = "c++";
 			productName = "c++";
 			productReference = EE7B9E17256511130038FEF4 /* c++ */;
+			productType = "com.apple.product-type.tool";
+		};
+		EE80DEBD257A498D0032F7E3 /* SortingTechniques */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE80DEC4257A498D0032F7E3 /* Build configuration list for PBXNativeTarget "SortingTechniques" */;
+			buildPhases = (
+				EE80DEBA257A498D0032F7E3 /* Sources */,
+				EE80DEBB257A498D0032F7E3 /* Frameworks */,
+				EE80DEBC257A498D0032F7E3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SortingTechniques;
+			productName = SortingTechniques;
+			productReference = EE80DEBE257A498D0032F7E3 /* SortingTechniques */;
 			productType = "com.apple.product-type.tool";
 		};
 		EEACA1852572665C0001F48B /* Kth min and max element */ = {
@@ -511,6 +557,9 @@
 					EE7B9E16256511130038FEF4 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					EE80DEBD257A498D0032F7E3 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					EEACA1852572665C0001F48B = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -563,6 +612,7 @@
 				EED28D272573DC68001AA875 /* KadanesAlogorithm */,
 				EED28D422573DC98001AA875 /* MaxSubArraySumFirstProblem */,
 				EED28D5625740265001AA875 /* MinimizeTheMaxdifference */,
+				EE80DEBD257A498D0032F7E3 /* SortingTechniques */,
 			);
 		};
 /* End PBXProject section */
@@ -573,6 +623,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE7B9E1B256511130038FEF4 /* reverseArray.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE80DEBA257A498D0032F7E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE80DEC1257A498D0032F7E3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,6 +835,22 @@
 			};
 			name = Release;
 		};
+		EE80DEC2257A498D0032F7E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE80DEC3257A498D0032F7E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		EEACA18A2572665C0001F48B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -938,6 +1012,15 @@
 			buildConfigurations = (
 				EE7B9E1F256511130038FEF4 /* Debug */,
 				EE7B9E20256511130038FEF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE80DEC4257A498D0032F7E3 /* Build configuration list for PBXNativeTarget "SortingTechniques" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE80DEC2257A498D0032F7E3 /* Debug */,
+				EE80DEC3257A498D0032F7E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
