@@ -91,8 +91,10 @@ void PatternMatching(char *str, char *pattern,unsigned long int size, unsigned l
 int main() {
     
 //finding substring
-//    int initial=4,length=4;
-//    char str[80]={"THE\"END"};
+    int initial=4,length=4;
+    char str[80]={"THE\"END"};
+    
+    FindSubstring(str, initial, length);
    
     
 
