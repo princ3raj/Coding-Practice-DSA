@@ -66,12 +66,13 @@ void PatternMatching(char *str, char *pattern,unsigned long int size, unsigned l
             
             if(pattern[i]==str[j]){
                 i++;
+                cout<<j<<endl;
             }
             else
             {
                 match=i;
                 i=0;
-                j=j-match;
+                j=j-match;// this is done for going backwards when patter matching fails in between like UUY in UUUUUUY
             }
             
             if(i==size)
@@ -98,8 +99,8 @@ int main() {
     
     
 //pattern matching
-    char string[]={"PRINCE IS A MIND BLOWING let me boast atleats haha"};
-    char pattern[]={"haha"};
+    char string[]={"aabbbabb"};
+    char pattern[]={"bab"};
     unsigned long int stringSize=strlen(string);
     unsigned long int patterSize=strlen(pattern);
     
