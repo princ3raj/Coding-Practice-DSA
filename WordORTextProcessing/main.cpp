@@ -96,10 +96,10 @@ void Insertion(char *str,char *InsertionStr,int position, unsigned long int leng
     str[initialposition]=InsertionStr[j];
     
     
-    
-    for(int k=0;k<100;k++)
-    cout<<str[k];
-    cout<<endl;
+//
+//    for(int k=0;k<100;k++)
+//    cout<<str[k];
+//    cout<<endl;
 
     
 }
@@ -123,31 +123,106 @@ void FindSubstring(char *str,int initial, int length, unsigned long int str5len)
 }
 
 
+//PATTERN MATCH and then replace its occurence with pattern2
+
+void Replacement(char *str, char *pattern1, char *pattern2,unsigned long int pattern1size,unsigned long int pattern2size,unsigned long int stringSize){
+    int match=0;
+    int flag=0;//flag is used to know that atleast one patter matched or not
+    int i=0;
+        for(int j=flag;j<=stringSize;j++){
+            
+            if (str[j]=='\0') {
+                break;
+            }
+            
+            if(pattern1[i]==str[j]){
+                i++;
+            }
+            else
+            {
+                match=i;
+                i=0;
+                j=j-match;// this is done for going backwards when pattern matching fails in between like UUY in UUUUUUY
+            }
+            
+            if(i==pattern1size)
+            {
+                for(int u=0;u<pattern1size;u++){
+                    str[j-i+1+u]='*';
+                }
+                
+                Insertion(str, pattern2, j-i+1, pattern2size);
+               
+            
+                flag++;
+                break;
+               
+            }
+        }
+    
+    if(i==0 && flag<=0){
+        printf("No string found\n");
+    }
+    
+    for(int s=0;s<stringSize;s++)
+    cout<<str[s];
+    cout<<endl;
+    
+}
+
+
 int main() {
     
-    
-    
-    //Insertion Function Calling Bpdy
-    char str[100]={"ABCDEFG"};
-    char InsertionStr[]={"PRINCE"};
+//    Insertion Function Calling Bpdy
+    char str[100]={"XAY"};
+    char InsertionStr[]={"AB"};
     unsigned long int length=strlen(InsertionStr);
-    int position=4;
+    int position=1;
     Insertion(str,InsertionStr,position,length);
+
     
-    
-    //pattern matching and then delete (deletion function calling body)
-        char string[]={"DEABCDEFGDESS"};
-        char pattern[]={"Z"};
+//    pattern matching and then delete (deletion function calling body)
+        char string[]={"XABYABZ"};
+        char pattern[]={"AB"};
         unsigned long int stringSize=strlen(string);
         unsigned long int patternSize=strlen(pattern);
     Deletion(string,pattern,patternSize,stringSize);
-    
-    
-    //Find Sunstring from given position and delete it till its length
+
+//    
+//    Find Substring from given position and delete it till its length
     int initial=2,length1=4;
     char str5[80]={"ABCDEFG"};
     unsigned long int str5len=strlen(str5);
-    
     FindSubstring(str5, initial, length1,str5len);
+    
+    
+    
+    //Replacement Function Body Call
+    //Replace pattern1 with pattern2
+
+    char str6[100]={"XAYA"};
+    char pattern1[]={"A"};
+    char pattern2[]={"PRINCERAJ"};
+    unsigned long int pattern1size=strlen(pattern1);
+    unsigned long int pattern2size=strlen(pattern2);
+//    unsigned long int str6Size=strlen(str6);
+    Replacement(str6, pattern1, pattern2,pattern1size,pattern2size,100);
+    for(int i=0;i<100;i++){
+        if(str6[i]=='*'){
+            str6[i]='\0';
+        }
+    }
+    
+    for(int i=0;i<100;i++){
+        cout<<str6[i];
+    }
+    cout<<endl;
+
+    
+    
+    
+    
+    
+    
  
 }
