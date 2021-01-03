@@ -58,11 +58,11 @@ void FindSubstring(char *str,int initial, int length){
 
 //PATTERN MATCHING OR AKA INDEXING
 
-void PatternMatching(char *str, char *pattern, int size){
+void PatternMatching(char *str, char *pattern,unsigned long int size, unsigned long int patterSize){
     int match=0;
     int flag=0;
     int i=0;
-        for(int j=flag;j<=30;j++){
+        for(int j=flag;j<=patterSize;j++){
             
             if(pattern[i]==str[j]){
                 i++;
@@ -94,16 +94,17 @@ int main() {
 //    char str[80]={"THE\"END"};
    
     
-int size;
+
     
     
 //pattern matching
-    char string[80]={"HIS FATHER IS THE PROFESSOR"};
-    char pattern[10]={" THE "};
-    size=5;
+    char string[]={"PRINCE IS A MIND BLOWING let me boast atleats haha"};
+    char pattern[]={"haha"};
+    unsigned long int stringSize=strlen(string);
+    unsigned long int patterSize=strlen(pattern);
     
     
-    PatternMatching(string,pattern,size);
+    PatternMatching(string,pattern,patterSize,stringSize);
  
     
    
