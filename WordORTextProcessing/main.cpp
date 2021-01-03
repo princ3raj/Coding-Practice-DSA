@@ -24,6 +24,7 @@ void Deletion(char *str, char *pattern,unsigned long int size, unsigned long int
             if(pattern[i]==str[j]){
                 i++;
             
+            
             }
             else
             {
@@ -39,11 +40,13 @@ void Deletion(char *str, char *pattern,unsigned long int size, unsigned long int
                 for(int u=0;u<size;u++){
                     str[j-i+1+u]='\0';
                 }
-                break;
+                
+                flag++;
+               
             }
         }
     
-    if(i==0){
+    if(i==0 && flag<=0){
         printf("No string found\n");
     }
     
@@ -133,8 +136,8 @@ int main() {
     
     
     //pattern matching and then delete (deletion function calling body)
-        char string[]={"ABCDEFG"};
-        char pattern[]={"DE"};
+        char string[]={"DEABCDEFGDESS"};
+        char pattern[]={"Z"};
         unsigned long int stringSize=strlen(string);
         unsigned long int patternSize=strlen(pattern);
     Deletion(string,pattern,patternSize,stringSize);
